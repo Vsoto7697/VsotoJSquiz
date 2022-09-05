@@ -1,0 +1,21 @@
+.container {
+
+    
+}
+
+#high_scores {
+    color: violet;
+}
+
+#heading {
+    text-align: center;
+}
+
+#quiz-question {
+    text-align: center;
+}
+
+.button {
+    background-color: purple;
+    color: white;
+}
