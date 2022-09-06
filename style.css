@@ -1,6 +1,12 @@
 .container {
+}
 
-    
+.timer {
+    text-align: right;
+}
+
+.timer_sec {
+    text-align: right;
 }
 
 #high_scores {
@@ -12,10 +18,25 @@
 }
 
 #quiz-question {
+    display: flex;
     text-align: center;
+    font-size: larger;
 }
 
+/*Start Button Styling*/
 .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 25px;
+    position: absolute;
+    border: none;
     background-color: purple;
     color: white;
 }
