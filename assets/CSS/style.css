@@ -1,230 +1,251 @@
 * {
-    /* target this style to all elements in html*/
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* target this style to all elements in html*/
 }
 
 body {
-    /* target body element in html*/
-    font-family: 'Courier New', Courier, monospace;
     background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    /* target body element in html*/
 }
 
 header {
-    /* target header element in html*/
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style: none;
     color: blue;
-    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 2vw;
-    padding-top: 10px;
+    height: 60px;
+    justify-content: space-between;
+    list-style: none;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+    /* target header element in html*/
 }
 
 .highscorebtn {
-    /*target high score button*/
-    border-radius: 10px;
     background-color: white;
-    text-decoration: none;
+    border-radius: 10px;
     border: 0;
-    outline: 0;
     color: blue;
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
+    outline: 0;
+    text-decoration: none;
+    /*target high score button*/
 }
 
 .highscorebtn:hover {
-    /*target background color of highscore button in order to highlight orange whenever a user hovers mouse arrow over element*/
     background-color: orange;
+    /*target background color of highscore button in order to highlight orange whenever a user hovers mouse arrow over element*/
 }
 
 .btn {
-    /*target button element*/
+    background-color:blue;
     border-radius: 12px;
     border: 0;
-    outline: 0;
-    background-color:blue;
     color: white;
     font-family:'Courier New', Courier, monospace;
     font-size: 10px;
+    outline: 0;
+    /*target button element*/
 }
 
 #quizsection {
-    /*target quiz section in my html*/
-    margin-left: 25%;
-    margin-right: 25%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 50px;
+    flex-wrap: wrap;
     font-family:'Courier New', Courier, monospace;
     font-size: 22px;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    /*target quiz section in my html*/
 }
 
 #quiz {
-    /*target quiz element in html*/
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 2fr 1fr;
-    grid-template-rows: repeat(10, 1fr); 
-    gap: 10px 10px; 
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
+    gap: 10px 10px;
+    grid-template-columns: repeat(2, 1fr) 2fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    /*target quiz element in html*/
 }
 
 #quizquestion {
-    /*target quiz question*/
-    text-align: center;
     align-self: baseline;
+    font-size: 30px;
     grid-column: 2 / span 2;
     grid-row: 1 / span 5;
     place-self: center;
-    font-size: 30px;
+    text-align: center;
+    /*target quiz question*/
 }
 
 #users-final-score {
-    /*target users final score*/
+    font-size: 15px;
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
-    font-size: 15px;
+    /*target users final score*/
 }
 
 #insertname {
-    /*target insert name section*/
+    font-size: 15px;
     grid-column: 1 / span 1;
     grid-row: 7 / span 1;
-    font-size: 15px;
+    /*target insert name section*/
 }
 
 #high-score-name {
-    /*target high score name element in html*/
+    font-size: 15px;
     grid-column: 2 / span 1;
     grid-row: 7 / span 1;
-    font-size: 15px;
     resize: none;
+    /*target high score name element in html*/
 }
 
 #submithighscore {
-    /*target element that submits high score*/
-    grid-column: 3 / span 1;
-    grid-row: 7 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: orange;
     border-radius: 10%;
     border: 0;
-    outline: 0;
-    background-color: orange;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 3 / span 1;
+    grid-row: 7 / span 1;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target element that submits high score*/
 }
 
 #startquizbutton {
-    /*target element that starts quiz*/
-    grid-column: 2 / span 2;
-    grid-row: 5 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: blue;
     border-radius: 10%;
     border: 0;
-    outline: 0; 
-    background-color: blue;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 1;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target element that starts quiz*/
 }
 
 #startquizbutton:hover {
-    /*target element to high quiz button when user hovers mouse over it*/
     background-color: orange;
+    /*target element to high quiz button when user hovers mouse over it*/
 }
 
 
 #option1 {
-    /*target option 1 selection on quiz*/
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: blue;
     border-radius: 10%;
     border: 0;
-    outline: 0;
-    background-color: blue;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
     margin-left: 25px;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target option 1 selection on quiz*/
 }
 
 #option1:hover {
-    /*target element option 1 to highlight orange whene user hovers mouse over it*/
     background-color: orange;
+    /*target element option 1 to highlight orange whene user hovers mouse over it*/
 }
 
 #option2 {
-    /*target option 2 selection on quiz*/
-    grid-column: 1 / span 2;
-    grid-row: 7 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: blue;
     border-radius: 10%;
     border: 0;
-    outline: 0;
-    background-color: blue;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 1 / span 2;
+    grid-row: 7 / span 1;
     margin-left: 25px;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target option 2 selection on quiz*/
 }
 
 
 #option2:hover {
-    /*target element option 2 to highlight orange whene user hovers mouse over it*/
     background-color: orange;
+    /*target element option 2 to highlight orange whene user hovers mouse over it*/
 }
 
 #option3 {
-    /*target option 3 selection on quiz*/
-    grid-column: 1 / span 2;
-    grid-row: 8 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: blue;
     border-radius: 10%;
     border: 0;
-    outline: 0;
-    background-color: blue;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 1;
     margin-left: 25px;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target option 3 selection on quiz*/
 }
 
 #option3:hover {
-    /*target element option 3 to highlight orange whene user hovers mouse over it*/
     background-color: orange;
+    /*target element option 3 to highlight orange whene user hovers mouse over it*/
 }
 
 #option4 {
-    /*target option 3 selection on quiz*/
-    grid-column: 1 / span 2;
-    grid-row: 8 / span 1;
-    padding: 10px 10px 10px 10px;
+    background-color: blue;
     border-radius: 10%;
     border: 0;
-    outline: 0;
-    background-color: blue;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    grid-column: 1 / span 2;
+    grid-row: 9 / span 1;
     margin-left: 25px;
+    outline: 0;
+    padding: 10px 10px 10px 10px;
+    /*target option 3 selection on quiz*/
 }
 
 #option4:hover {
-    /*target element option 3 to highlight orange whene user hovers mouse over it*/
     background-color: orange;
+    /*target element option 3 to highlight orange whene user hovers mouse over it*/
 }
 
+#answerslist {
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    gap: 10px 10px;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    /*target answer list*/
+}
+ 
+#answers {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    text-align: left;
+    /*target answers element from html*/
+}
 
-
-
+@media screen and (max-width: 980px) {
+    
+    /*target screen whenever screen size is diifferent*/
+    *{
+      flex: 1 100%;
+  }
+}
 
