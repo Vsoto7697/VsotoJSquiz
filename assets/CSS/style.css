@@ -1,43 +1,45 @@
-.container {
-    border: .5in;
+/* target this style to all elements in html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.timer {
-    text-align: right;
+/* target body element in html*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
 }
 
-.timer_sec {
-    text-align: right;
-}
+/* target header element in html*/
 
-#high_scores {
-    color: blue ;
-}
-
-#heading {
-    text-align: center;
-}
-
-#quiz-question {
+header {
     display: flex;
-    text-align: center;
-    font-size: larger;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    color: blue;
+    height: 60px;
+    font-size: 2vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/*Start Button Styling*/
-#startquizbutton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    border-radius: 4px;
-    font-size: 25px;
-    position: absolute;
-    border: none;
-    background-color: blue;
-    color: white;
+/*target high score button*/
+.highscorebtn {
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    color: blue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+/*target background color of highscore button in order to highlight orange whenever a user hovers mouse arrow over element*/
+.highscorebtn:hover {
+    background-color: orange;
 }
