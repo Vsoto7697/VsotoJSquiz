@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB API QUIZ</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <!--button that will allow you to click on high scores to view the high score to list-->
+        <div>
+        <button class="highscorebtn" id="high_scores">View High Scores</button>
+        </div>
+
+        <!--Time that will count down from 60 to give user 60 seconds to complete the quiz-->
+        <div>
+            <p>Time: <span id="Time-Left">60</span></p>
+        </div>
+    </header>
+
+    <!--Quiz section-->
+    <main>
+    
+        <section id="quizsection">
+
+            <!--Quiz Title-->
+            <h1 id="Quiz">Coding Quiz Challenge</h1>
+
+            <!--Quiz instructions-->
+            <p id="quiz-question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+
+            <!--Display final scores after user has completed quiz-->
+            <p id="users-final-score"></p>
+
+            <!--name insert name here-->
+            <p id="entername"></p>
+
+            <!--text area for user to input name after quiz is over and high score is reached-->
+            <textarea id="high-score-intials"></textarea>
+            
+            <!--start quiz button will go here-->
+            <button class="btn" id="startquizbutton">Start Quiz</button>
+
+            <!--Button to select option 1 as answer-->
+            <button class="btn" id="option1"></button>
+
+            <!--Button to select option 2 as answer-->
+            <button class="btn" id="option2"></button>
+
+            <!--Button to select option 3 as answer-->
+            <button class="btn" id="option3"></button>
+
+            <!--Button to select option 4 as answer-->
+            <button class="btn" id="option4"></button>
+
+            <!--Button to submit high score after quiz is down-->
+            <button class="btn" id="submithighscore"></button>
+            
+        </section>
+
+
+
+
+    </main>
+
+    
+
+    <script src="assets/Javascript/script.js"></script>
+
+</body>
+
+</html>
