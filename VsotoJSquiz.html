@@ -6,29 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB API QUIZ</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-         <div id="high_scores">View high scores</div>
-         <div class="timer">Time:</div>
-         <div class="timer_sec">60</div>
-        </header>
+    <header>
+        <!--button that will allow you to click on high scores to view the high score to list-->
+        <div>
+        <button id="high_scores">View High Scores</button>
+        </div>
 
+        <!--Time that will count down from 60 to give user 60 seconds to complete the quiz-->
+        <div>
+            <p>Time: <span id="Time-Left">60</span></p>
+        </div>
+    </header>
 
-        <h1 id="heading">Coding Quiz Challenge</h1>
+    <!--Quiz section-->
+    <section id="quizsection">
+        <h1 id="Quiz">Coding Quiz Challenge</h1>
 
         <div id="quiz-question"><div id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! </div>
         </div>
 
-        <button type="button" class="button">Start Quiz</button>
-        
-    </div>
+        <button id="startquizbutton">Start Quiz</button>
+    </section>
 
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    
 
-    <script> src="script.js"></script>
+    <script src="assets/Javascript/script.js"></script>
 
 </body>
 
