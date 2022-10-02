@@ -23,52 +23,55 @@
     </header>
 
     <!--Quiz section-->
-    <main>
+
+    <section id="quizsection">
+
+        <!--Quiz Title-->
+        <h1 id="Quiz">Coding Quiz Challenge</h1>
+
+        <!--Quiz instructions-->
+        <p id="quiz-question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+
+        <!--Display final scores after user has completed quiz-->
+        <p id="users-final-score"></p>
+
+        <!--name insert name here-->
+        <p id="entername"></p>
+
+        <!--text area for user to input name after quiz is over and high score is reached-->
+        <textarea id="high-score-intials"></textarea>
+        
+        <!--start quiz button will go here-->
+        <button class="btn" id="startquizbutton">Start Quiz</button>
+
+        <!--Button to select option 1 as answer-->
+        <button class="btn" id="option1"></button>
+
+        <!--Button to select option 2 as answer-->
+        <button class="btn" id="option2"></button>
+
+        <!--Button to select option 3 as answer-->
+        <button class="btn" id="option3"></button>
+
+        <!--Button to select option 4 as answer-->
+        <button class="btn" id="option4"></button>
+
+        <!--Button to submit high score after quiz is down-->
+        <button class="btn" id="submithighscore"></button>
+
+    </section>
+
+    <section>
+        
+        <!--answer to quiz list-->
+        <div id="answerslist"></div>
+
+        <!--answers that are correct and answers that are wrong-->
+        <p id="answers"></p>
     
-        <section id="quizsection">
+    </section>
 
-            <!--Quiz Title-->
-            <h1 id="Quiz">Coding Quiz Challenge</h1>
-
-            <!--Quiz instructions-->
-            <p id="quiz-question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-
-            <!--Display final scores after user has completed quiz-->
-            <p id="users-final-score"></p>
-
-            <!--name insert name here-->
-            <p id="entername"></p>
-
-            <!--text area for user to input name after quiz is over and high score is reached-->
-            <textarea id="high-score-intials"></textarea>
-            
-            <!--start quiz button will go here-->
-            <button class="btn" id="startquizbutton">Start Quiz</button>
-
-            <!--Button to select option 1 as answer-->
-            <button class="btn" id="option1"></button>
-
-            <!--Button to select option 2 as answer-->
-            <button class="btn" id="option2"></button>
-
-            <!--Button to select option 3 as answer-->
-            <button class="btn" id="option3"></button>
-
-            <!--Button to select option 4 as answer-->
-            <button class="btn" id="option4"></button>
-
-            <!--Button to submit high score after quiz is down-->
-            <button class="btn" id="submithighscore"></button>
-            
-        </section>
-
-
-
-
-    </main>
-
-    
-
+    <!--Javascript link-->
     <script src="assets/Javascript/script.js"></script>
 
 </body>
