@@ -1,79 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB API QUIZ</title>
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Web APIs Challenge: Code Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-    <header>
-        <!--button that will allow you to click on high scores to view the high score to list-->
-        <div>
-        <button class="highscorebtn" id="high_scores">View High Scores</button>
+<header class=>
+    <div class="title">Web APIs Challenge: Code Quiz<a href="highscores.html" class="highscores float-end">View Highscores</a></div>
+</header>
+<main class="container position-relative">
+    <div id="start" class="hide text-center">
+        <h1>Web APIs Challenge: Code Quiz</h1>
+        <button type="button" class="buttons mt-5" id="start-btn">Start</button> 
+    </div>
+    <div id="rules" class="info-box mt-5" style="width: auto" >
+        <div class="info-title"> Code Quiz Rules</div>
+        <div class="info-list">
+            <div class="info">1. You only have <span>75 seconds</span> to finish 10 questions.</div>
+            <div class="info">2. You cannot go back to a previous question.</div>
+            <div class="info">3. If you answer a question incorrectly, you are penalized 10 seconds.</div>
         </div>
-
-        <!--Time that will count down from 60 to give user 60 seconds to complete the quiz-->
-        <div>
-            <p>Time: <span id="Time-Left">60</span></p>
+        <div class="buttons">
+            <button class="quit btn btn-primary btn-sm"><a href="https://github.com/Vsoto7697/VsotoJSquiz" class="highscores float-end">Exit Quiz</a></button>
+            <button class="restart btn btn-primary btn-sm">Continue</button>
         </div>
-    </header>
-
-    <!--Quiz section-->
-
-    <section id="quizsection">
-
-        <!--Quiz Title-->
-        <h1 id="Quiz">Coding Quiz Challenge</h1>
-
-        <!--Quiz instructions-->
-        <p id="quiz-question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-
-        <!--Display final scores after user has completed quiz-->
-        <p id="users-final-score"></p>
-
-        <!--name insert name here-->
-        <p id="insertname"></p>
-
-        <!--text area for user to input name after quiz is over and high score is reached-->
-        <textarea id="high-score-intials"></textarea>
-        
-        <!--start quiz button will go here-->
-        <button class="btn" id="startquizbutton">Start Quiz</button>
-
-        <!--Button to select option 1 as answer-->
-        <button class="btn" id="option1"></button>
-
-        <!--Button to select option 2 as answer-->
-        <button class="btn" id="option2"></button>
-
-        <!--Button to select option 3 as answer-->
-        <button class="btn" id="option3"></button>
-
-        <!--Button to select option 4 as answer-->
-        <button class="btn" id="option4"></button>
-
-        <!--Button to submit high score after quiz is down-->
-        <button class="btn" id="submithighscore"></button>
-
+    </div>
+    <section id="questions" class="hide row quiz-box mt-5" style="width: auto">
+        <div id="time-rem">
+            <span>Time Left: 75</span>
+        </div>   
+        <h1 class="que-text">
+            <span></span>
+        </h1>
+        <div id="choices" class="flex-direction">
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+        </div>
+        <div id="response">
+            <span></span>
+        </div>
     </section>
-
-    <section>
-        
-        <!--answer to quiz list-->
-        <div id="answerslist"></div>
-
-        <!--answers that are correct and answers that are wrong-->
-        <p id="answers"></p>
-    
-    </section>
-
-    <!--Javascript link-->
-    <script src="assets/Javascript/script.js"></script>
-
+    <div id="quiz-end" class="hide text-center p-5">
+        <div class="flex-direction flex-direction"><h1>End of Quiz</h1>
+            <h3 class="score"></h3>
+            <h2>Enter Initials:</h2>
+            <input type="text" id="initials" class="mt-1">
+            <button id="save-score">Submit</button>
+        </div>
+    </div>
+</main>
+<script src="assets/questions.js"></script>
+<script src="assets/script.js"></script>
 </body>
-
 </html>

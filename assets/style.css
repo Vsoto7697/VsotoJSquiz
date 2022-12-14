@@ -1,0 +1,140 @@
+:root{
+    --blue: blue;
+    --orange: orange;
+    --white: #ffffff;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Literata', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body{
+    background: var(--white);
+}
+.hide{
+    display: none;
+}
+.start{
+    display: block;
+}
+
+.info-box{
+    background: var( --white);
+    border-radius: 5px;
+    width: 540px;
+}
+.info-box .info-title {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+    justify-content: center;
+    padding: auto;
+    text-align: center;
+}
+.info-box .info-list{
+    padding: 15px 35px;
+}
+.info-box .info-list .info{
+    font-size: 17px;
+    margin: 5px 0;
+}
+.info-box .info-list .info span{
+    color: orange;
+    font-weight: 600;
+}
+
+.quiz-box{
+    background: var(--white);
+    border-radius: 5px;
+    width: 540px;
+}
+
+#timeRem{
+    margin-top: 5;
+}
+#start-btn{
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    width: 50%;
+}
+#start-btn:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.info-box .buttons{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: flex-end;
+    padding: o 35px;
+} 
+.info-box .buttons button{
+    background: var(--blue);
+    border-radius: 7px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    width: 100px;
+}
+.buttons button.quit{
+    background: var(--blue);
+    color: var(--white);
+}
+.buttons button.restart{
+    background: var(--blue);
+    color: var(--white);
+}
+.buttons button.quit:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.buttons button.restart:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.option {
+    background: var(--blue);
+    border-radius: 5px;
+    border: solid var(--blue);
+    color: var(--white);
+    margin: 5px;
+}
+.option:hover{
+    background: var(--orange);
+    cursor: pointer;
+}
+#initials, #saveScore {
+    width: 100px;
+}
+#response{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    padding: o 35px;
+}
+#saveScore{
+    background-color: var(--white);
+    color: var(--blue);
+    width:50%
+}
+#saveScore:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.buttons{
+    justify-content: center;
+}
+.buttons a {
+        color: white;
+        text-decoration: none;
+    }
