@@ -19,7 +19,7 @@
 
   ![Website Screenshot](./public/assets/images/websitescreenshot3.jpeg)
 
-  To visit please click on link [link](https://infinite-stream-95680.herokuapp.com)
+  To visit please click on link [link](https://vsoto7697.github.io/VsotoJSquiz/)
   
   ## Questions
   Have questions about this project?  
